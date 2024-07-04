@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist", // .ts나 .js가 만들어진 결과를 넣어두는 폴더
+		"allowJs": true, // .js 파일을 허용할 것인지 여부
+		"target": "es5", // 결과물이 될 자바스크립트 버전 지정
+		"jsx": "react-jsx"
+	},
+	"include": ["src"] // 트랜스파일 할 자바스크립트와 타입스크립트 파일 지정
+}
