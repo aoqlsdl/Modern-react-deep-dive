@@ -3,7 +3,13 @@
 		"outDir": "./dist", // .ts나 .js가 만들어진 결과를 넣어두는 폴더
 		"allowJs": true, // .js 파일을 허용할 것인지 여부
 		"target": "es5", // 결과물이 될 자바스크립트 버전 지정
-		"jsx": "react-jsx"
+		"jsx": "react-jsx", // jsx 허용 여부
+		"esModuleInterop": true, // React 임포트시 'esModuleInterop' 플래그 에러 제거
+		"strict": true, // 엄격한 타입 검사 옵션을 활성화합니다.
+		"module": "commonjs", // 모듈 시스템을 commonjs로 설정합니다.
+		"skipLibCheck": true, // 라이브러리 파일의 타입 검사를 건너뜁니다.
+		"forceConsistentCasingInFileNames": true // 파일 이름의 대소문자 일관성을 강제합니다.
 	},
-	"include": ["src"] // 트랜스파일 할 자바스크립트와 타입스크립트 파일 지정
+	"include": ["src/**/*"], // 트랜스파일 할 자바스크립트와 타입스크립트 파일 지정
+	"exclude": ["node_modules"] // node_modules 폴더 제외
 }
