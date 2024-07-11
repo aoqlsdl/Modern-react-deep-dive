@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./unit04/04-01-01";
+import App from "./unit10/10-1";
 import ParentComponent from "./unit06/06-03-01";
 import reportWebVitals from "./reportWebVitals";
 
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ParentComponent />
+    <App />
   </React.StrictMode>,
 );
 
